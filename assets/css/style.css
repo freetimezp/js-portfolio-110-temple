@@ -153,7 +153,18 @@ img {
 }
 
 /* Add blur header */
-
+.blur-header::after {
+  content: '';
+  position: absolute;
+  width: 1000%;
+  height: 100%;
+  background-color: hsla(353, 98%, 90%, .4);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 
 /*=============== HOME ===============*/
 .home {
